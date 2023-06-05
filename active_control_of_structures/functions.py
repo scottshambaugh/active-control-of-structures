@@ -16,7 +16,7 @@ from scipy.linalg import (eig, inv, logm, expm, sqrtm, svd, norm,
 
 
 def modal1(a: np.ndarray, b: np.ndarray, c: np.ndarray) -> \
-    tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+            tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     """
     This function determines the modal representation 1 (am, bm, cm)
     given a generic state-space representation (a, b, c)
@@ -99,7 +99,7 @@ def modal1(a: np.ndarray, b: np.ndarray, c: np.ndarray) -> \
 
 
 def modal2(a: np.ndarray, b: np.ndarray, c: np.ndarray) -> \
-    tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+            tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     """
     This function determines the modal representation 2 (am, bm, cm)
     given a generic state-space representation (a, b, c)
@@ -165,7 +165,7 @@ def modal2(a: np.ndarray, b: np.ndarray, c: np.ndarray) -> \
 
 def modal1m(om: np.ndarray, z: np.ndarray, mm: np.ndarray, phi: np.ndarray,
             b: np.ndarray, cq: np.ndarray, cv: np.ndarray, coord: int) -> \
-    tuple[np.ndarray, np.ndarray, np.ndarray]:
+                tuple[np.ndarray, np.ndarray, np.ndarray]:
     """
     Determines the modal form 1 (am, bm, cm) from modal data.
 
@@ -238,7 +238,7 @@ def modal1m(om: np.ndarray, z: np.ndarray, mm: np.ndarray, phi: np.ndarray,
 
 def modal2m(om: np.ndarray, z: np.ndarray, mm: np.ndarray, phi: np.ndarray,
             b: np.ndarray, cq: np.ndarray, cv: np.ndarray, coord: int) -> \
-    tuple[np.ndarray, np.ndarray, np.ndarray]:
+                tuple[np.ndarray, np.ndarray, np.ndarray]:
     """
     Determines the modal form 2 (am, bm, cm) from modal data.
 
@@ -309,7 +309,9 @@ def modal2m(om: np.ndarray, z: np.ndarray, mm: np.ndarray, phi: np.ndarray,
     return am, bm, cm
 
 
-def modal1n(m, damp, k, b, cq, cv, n, coord):
+def modal1n(m: np.ndarray, damp: np.ndarray, k: np.ndarray, b: np.ndarray,
+            cq: np.ndarray, cv: np.ndarray, coord: int) -> \
+                tuple[np.ndarray, np.ndarray, np.ndarray]:
     """
     Determines the modal form 1 (am, bm, cm) from nodal data.
 
@@ -390,7 +392,9 @@ def modal1n(m, damp, k, b, cq, cv, n, coord):
     return am, bm, cm
 
 
-def modal2n(m, damp, k, b, cq, cv, n, coord):
+def modal2n(m: np.ndarray, damp: np.ndarray, k: np.ndarray, b: np.ndarray,
+            cq: np.ndarray, cv: np.ndarray, coord: int) -> \
+                tuple[np.ndarray, np.ndarray, np.ndarray]:
     """
     Determines the modal form 2 (am, bm, cm) from nodal data.
 
