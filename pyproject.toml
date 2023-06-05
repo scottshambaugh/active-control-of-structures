@@ -18,6 +18,8 @@ notebook = "^6.0"
 ipympl = "^0.9"
 pytest = "^7.0"
 
+[tool.pyright]
+reportGeneralTypeIssues = "none"
 
 [build-system]
 requires = ["poetry-core"]

@@ -392,7 +392,7 @@ def modal1n(m, damp, k, b, cq, cv, n, coord):
 
 def modal2n(m, damp, k, b, cq, cv, n, coord):
     """
-    Determines the modal form 1 (am, bm, cm) from nodal data.
+    Determines the modal form 2 (am, bm, cm) from nodal data.
 
     In the parameters below, n is the number of modes and nd is the number of
     degrees of freedom.
