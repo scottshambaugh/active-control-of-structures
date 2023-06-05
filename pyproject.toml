@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "active_control_of_structures"
+version = "0.1.0"
+description = ""
+authors = ["Scott Shambaugh <scottshambaugh@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "active_control_of_structures"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.0"
+scipy = "^1.8"
+matplotlib = "^3.6"
+slycot = "^0.5"
+control = "^0.9"
+notebook = "^6.0"
+ipympl = "^0.9"
+pytest = "^7.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

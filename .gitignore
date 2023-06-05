@@ -1,0 +1,34 @@
+__pycache__/
+_build/
+*.py[cod]
+*.egg-info
+
+# Sphinx docs
+build/
+_static/
+_templates/
+
+# Local configs
+mypy.ini
+
+# Poetry
+dist/
+
+# Pytest
+.hypothesis/
+.pytest_cache/
+htmlcov/
+.coverage
+
+# VSCode
+.vscode/
+
+# Security Keys
+*.pem
+*.ppk
+
+# Auto-generated setup.py
+setup.py
+
+# Jupyter cache
+*.ipynb_checkpoints
