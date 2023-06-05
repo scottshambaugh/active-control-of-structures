@@ -42,3 +42,27 @@ def test_modal1n():
 def test_modal2n():
     # TODO
     assert True
+
+def test_modal_time_fr():
+    # TODO
+    assert True
+
+def test_balan2():
+    # TODO
+    assert True
+
+def test_norm_H2():
+    # TODO
+    assert True
+
+def test_norm_Hankel():
+    # TODO
+    assert True
+
+def test_bal_LQG():
+    # TODO
+    assert True
+
+def test_bal_H_inf():
+    # TODO
+    assert True
