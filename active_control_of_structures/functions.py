@@ -46,6 +46,10 @@ def modal1(a: np.ndarray, b: np.ndarray, c: np.ndarray) -> \
 
     # transformation to complex-diagonal form
     an, v = eig(a)
+    idx = an.argsort()[::-1]  # sort eigenvalues from largest to smallest
+    an = an[idx]
+    v = v[:, idx]
+
     An = np.diag(an)
     bn = inv(v) @ b
     cn = c @ v
@@ -125,6 +129,10 @@ def modal2(a: np.ndarray, b: np.ndarray, c: np.ndarray) -> \
 
     # transformation to complex-diagonal form
     an, v = eig(a)
+    idx = an.argsort()[::-1]  # sort eigenvalues from largest to smallest
+    an = an[idx]
+    v = v[:, idx]
+
     An = np.diag(an)
     bn = inv(v) @ b
     cn = c @ v
@@ -337,6 +345,9 @@ def modal1n(m, damp, k, b, cq, cv, n, coord):
     """
     # modal matrix:
     om2, phi = eig(k, m)
+    idx = om2.argsort()[::-1]  # sort eigenvalues from largest to smallest
+    om2 = om2[idx]
+    phi = phi[:, idx]
     phi = phi[:, :n]
 
     # natural frequency matrix
